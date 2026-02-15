@@ -1,5 +1,5 @@
 ---
-"Azahar":
+"Azahar (Emudeck)":
   files:
     "<home>/Emulation/storage/azahar/sdmc":
       tags:
@@ -8,48 +8,78 @@
         - os: linux
     "<home>/.local/share/azahar-emu/states":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"Cemu":
+"BigPEmu (Emudeck)":
+  files:
+    "<home>/.bigpemu_userdata/*.bigpeep":
+      tags:
+        - save
+      when:
+        - os: linux
+    "<home>/.bigpemu_userdata/*.bigpstate":
+      tags:
+        - save
+      when:
+        - os: linux
+    "<home>/Applications/BigPEmu/UserData/*.bigpeep":
+      tags:
+        - save
+      when:
+        - os: linux
+    "<home>/Applications/BigPEmu/UserData/*.bigpstate":
+      tags:
+        - save
+      when:
+        - os: linux
+"Cemu (Emudeck)":
   files:
     "<home>/Emulation/roms/wiiu/mlc01/usr/save":
       tags:
         - save
       when:
         - os: linux
-"Citra":
-  files:
-    "<home>/.var/app/org.citra_emu.citra/data/citra-emu/sdmc":
-      tags:
-        - save
-      when:
-        - os: linux
-    "<home>/.var/app/org.citra_emu.citra/data/citra-emu/states":
-      tags:
-        - save-states
-      when:
-        - os: linux
-"Citron":
+"Citron (Emudeck)":
   files:
     "<home>/Emulation/storage/citron/nand/user/save/":
       tags:
         - save
       when:
         - os: linux
-"Dolphin":
+"Dolphin (Emudeck)":
   files:
-    "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu":
+    "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/Wii/title":
+      tags:
+        - save
+      when:
+        - os: linux
+    "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/GC":
       tags:
         - save
       when:
         - os: linux
     "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/StateSaves":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"DuckStation":
+    "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/Load/Riivolution":
+      tags:
+        - config
+      when:
+        - os: linux
+    "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/GameSettings":
+      tags:
+        - config
+      when:
+        - os: linux
+    "<home>/.var/app/org.DolphinEmu.dolphin-emu/config/dolphin-emu/Profiles":
+      tags:
+        - config
+      when:
+        - os: linux
+"DuckStation (Emudeck)":
   files:
     "<home>/Emulation/saves/duckstation/saves":
       tags:
@@ -58,17 +88,29 @@
         - os: linux
     "<home>/Emulation/saves/duckstation/states":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"Eden":
+"Eden (Emudeck)":
   files:
     "<home>/Emulation/storage/eden/nand/user/save/":
       tags:
         - save
       when:
         - os: linux
-"MAME":
+"Flycast (Emudeck)":
+  files:
+    "<home>/.var/app/org.flycast.Flycast/data/flycast/*.*":
+      tags:
+        - save
+      when:
+        - os: linux
+    "<home>/.var/app/org.flycast.Flycast/config/data/flycast":
+      tags:
+        - save
+      when:
+        - os: linux
+"MAME (Emudeck)":
   files:
     "<home>/Emulation/saves/MAME/saves":
       tags:
@@ -77,10 +119,10 @@
         - os: linux
     "<home>/Emulation/saves/MAME/states":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"melonDS":
+"melonDS (Emudeck)":
   files:
     "<home>/Emulation/saves/melonds/saves":
       tags:
@@ -89,10 +131,10 @@
         - os: linux
     "<home>/Emulation/saves/melonds/states":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"mGBA":
+"mGBA (Emudeck)":
   files:
     "<home>/Emulation/saves/mgba/saves":
       tags:
@@ -101,10 +143,10 @@
         - os: linux
     "<home>/Emulation/saves/mgba/states":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"PCSX2":
+"PCSX2 (Emudeck)":
   files:
     "<home>/Emulation/saves/pcsx2/saves":
       tags:
@@ -113,10 +155,10 @@
         - os: linux
     "<home>/Emulation/saves/pcsx2/states":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"PPSSPP":
+"PPSSPP (Emudeck)":
   files:
     "<home>/.var/app/org.ppsspp.PPSSPP/config/ppsspp/PSP/SAVEDATA":
       tags:
@@ -125,22 +167,27 @@
         - os: linux
     "<home>/.var/app/org.ppsspp.PPSSPP/config/ppsspp/PSP/PPSSPP_STATE":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"PrimeHack":
+    "<home>/.var/app/org.ppsspp.PPSSPP/config/ppsspp/PSP/Cheats":
+      tags:
+        - config
+      when:
+        - os: linux
+"PrimeHack (Emudeck)":
   files:
-    "<home>/.var/app/io.github.shiiion.primehack/data/dolphin-emu/Wii":
+    "<home>/.var/app/io.github.shiiion.primehack/data/dolphin-emu/Wii/title":
       tags:
         - save
       when:
         - os: linux
     "<home>/.var/app/io.github.shiiion.primehack/data/dolphin-emu/StateSaves":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"RetroArch":
+"RetroArch (Emudeck)":
   files:
     "<home>/.var/app/org.libretro.RetroArch/config/retroarch/saves":
       tags:
@@ -149,10 +196,10 @@
         - os: linux
     "<home>/.var/app/org.libretro.RetroArch/config/retroarch/states":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"Rosalie's Mupen GUI":
+"Rosalie's Mupen GUI (Emudeck)":
   files:
     "<home>/Emulation/saves/RMG/saves":
       tags:
@@ -161,17 +208,17 @@
         - os: linux
     "<home>/Emulation/saves/RMG/states":
       tags:
-        - save-states
+        - save
       when:
         - os: linux
-"RPCS3":
+"RPCS3 (Emudeck)":
   files:
     "<home>/Emulation/storage/rpcs3/dev_hdd0/home/00000001/savedata":
       tags:
         - save
       when:
         - os: linux
-"Ryujinx":
+"Ryujinx (Emudeck)":
   files:
     "<home>/.config/Ryujinx/bis/user/save":
       tags:
@@ -183,35 +230,47 @@
         - save-meta
       when:
         - os: linux
-"ScummVM":
+"ScummVM (Emudeck)":
   files:
     "<home>/Emulation/saves/scummvm/saves":
       tags:
         - save
       when:
         - os: linux
-"Vita3K":
+"shadPS4 (Emudeck)":
+  files:
+    "<home>/.local/share/shadPS4/savedata":
+      tags:
+        - save
+      when:
+        - os: linux
+"Vita3K (Emudeck)":
   files:
     "<home>/Emulation/storage/Vita3K/ux0/user/00/savedata":
       tags:
         - save
       when:
         - os: linux
-"Xemu":
+"Xemu (Emudeck)":
   files:
-    "<home>/Emulation/storage/xemu":
+    "<home>/Emulation/storage/xemu/xbox_hdd.qcow2":
       tags:
         - save
       when:
         - os: linux
-"Xenia":
+    "<home>/Emulation/storage/xemu/eeprom.bin":
+      tags:
+        - save
+      when:
+        - os: linux
+"Xenia (Emudeck)":
   files:
     "<home>/Emulation/roms/xbox360/content":
       tags:
         - save
       when:
         - os: linux
-"Yuzu":
+"Yuzu (Emudeck)":
   files:
     "<home>/Emulation/storage/yuzu/nand/user/save/":
       tags:

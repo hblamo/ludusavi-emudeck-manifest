@@ -1,21 +1,18 @@
 # ludusavi-emudeck-manifest
 Additional [Ludusavi](https://github.com/mtkennerly/ludusavi) manifest for finding save location of emulators based on information on the [emudeck wiki.](https://emudeck.github.io/save-management/steamos/save-management/)
 
-## How To Us:
+## How To Use:
 
 ### 1. Add manifest to Ludusavi
 
 You can add the manifest in the "other" tab and adding the new manifest to the list.
 
-Link to add: https://raw.githubusercontent.com/hblamo/ludusavi-emudeck-manifest/main/manifest.yml
-
-
+Link to add: https://raw.githubusercontent.com/pwatk/ludusavi-emudeck-manifest/main/manifest.yml
 
 ### 2. Update roots (if needed)
 
-If you've installed Emudeck on a seperate drive (or SD card), you'll want to make sure that drive is configured as a "home folder" in Ludusavi. I just duplicated my SD card location. So I had 2, one configured as a steam drive and one configured as a home folder.
-
+If the Emulation folder is on an SD card you will need to add the path (e.g. /run/media/deck/sdcard) as a new "Home folder" [root](https://github.com/mtkennerly/ludusavi/blob/master/docs/help/roots.md) in Ludusavi.
 
 ## Known issues:
 
-Windows is not setup to work. If anyone is interested in this, just setup a PR and we can figure it out together.
+Incompatible with Windows.
